@@ -1,0 +1,129 @@
+            @charset "UTF-8";
+            @font-face {
+                font-family: 'SHERLOCK';
+                src: url('/dio-netflix/font/Sherlock\ Vintage.ttf') format(truetype);
+            }
+            
+            @font-face {
+                font-family: Netflix;
+                src: url("/dio-netflix/font/NetflixSansRegular.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
+            
+             :root {
+                --vermelho: #e50914;
+                --preto: #141414;
+            }
+            
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: var(--preto);
+                font-family: 'Netflix', Times;
+                color: white;
+            }
+            
+            header div.container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            h1.logo {
+                margin-left: 5px;
+                color: var(--vermelho);
+                font-family: 'Arial Black', Times;
+                font-size: 2.5em;
+            }
+            
+            header nav a {
+                text-decoration: none;
+                color: #aaa;
+                margin-right: 10px;
+            }
+            
+            header nav a:hover {
+                color: #fff;
+            }
+            
+            header nav .search {
+                background-color: transparent;
+                color: #fff;
+                padding: 5px;
+                border: none;
+                margin-top: 6px;
+                margin-right: 5px;
+                font-size: 14px;
+                border-radius: 5px;
+            }
+            
+            @media screen and (max-width: 710px) {
+                .container a,
+                .container input {
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 5px;
+                    background-color: var(--preto);
+                }
+                .container input [type=text] {
+                    border: 0.5px solid var(--vermelho);
+                }
+            }
+            
+            .f-principal {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) 100%), url('/dio-netflix/img/sherlock-capa.jpg');
+                height: 400px;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            
+            .f-principal .container {
+                width: 60%;
+            }
+            
+            .f-principal .titulo {
+                font-family: 'SHERLOCK';
+                font-size: 2.5em;
+                font-weight: normal;
+                padding: 10px;
+            }
+            
+            .f-principal .sinopse {
+                padding: 5px 10px 5px 10px;
+            }
+            
+            .f-principal .botoes {
+                padding: 10px;
+            }
+            
+            .f-principal .botoes .botao {
+                margin-right: 15px;
+                font-weight: bold;
+                border: none;
+                padding: 8px 20px;
+                background-color: #8585853f;
+                color: white;
+                cursor: pointer;
+                transition: .2s ease all;
+                border-radius: 5px;
+            }
+            
+            .botoes .botao:hover {
+                background-color: white;
+                color: var(--preto);
+            }
+            
+            .botao i {
+                margin-right: 8px;
+            }
