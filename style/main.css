@@ -125,3 +125,14 @@ header nav .search {
     width: 100%;
     display: block;
 }
+
+.primeiro{
+    margin-top: 20px;
+}
+
+.secao-carrosel{
+    padding: 0px 0px 10px 10px;
+}
+ .owl-carousel{
+     padding: 0 10px 0 10px;
+ }
