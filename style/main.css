@@ -1,13 +1,6 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'SHERLOCK';
-    src: url('/dio-netflix/font/Tribal\ Garamond.ttf') format(TRUETYPE);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: Netflix;
     src: url("/dio-netflix/font/NetflixSansRegular.ttf") format("truetype");
     font-weight: normal;
@@ -18,7 +11,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-    :root {
+:root {
     --violeta: #8104B3;
     --preto: #141414;
 }
@@ -35,11 +28,12 @@ body {
     color: white;
 }
 
-header div.container {
+header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10px;
 }
 
 h1.logo {
@@ -50,24 +44,63 @@ h1.logo {
     font-weight: normal;
 }
 
+header nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav{
+    margin-left: 30px;
+}
+
 header nav a {
     text-decoration: none;
     color: #aaa;
-    margin-right: 10px;
+    font-size: 0.8em;
+    margin-right: 15px;
+    font-weight: 500;
 }
 
 header nav a:hover {
     color: #fff;
 }
 
-header nav .search {
+.interacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.interacao .notificacao{
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.interacao .user-arrow-box{
+    text-align: center;
+    margin: 0 0 0 -15px;
+}
+
+.interacao form button{
     background-color: transparent;
-    color: #fff;
-    padding: 5px;
+    color: white;
     border: none;
-    margin-top: 6px;
-    margin-right: 5px;
-    font-size: 14px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.interacao .nav-usuario img{
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
     border-radius: 5px;
 }
 
@@ -79,6 +112,7 @@ header nav .search {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 20px;
 }
 
 .f-principal .container {
@@ -86,14 +120,14 @@ header nav .search {
 }
 
 .f-principal .titulo {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size: 5em;
     font-weight: normal;
     padding: 10px;
 }
 
 .f-principal .sinopse {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 10px 10px;
 }
 
 .f-principal .botoes {
@@ -104,8 +138,8 @@ header nav .search {
     margin-right: 15px;
     font-weight: bold;
     border: none;
-    padding: 8px 20px;
-    background-color: #8585853f;
+    padding: 8px 25px;
+    background-color: #85858559;
     color: white;
     cursor: pointer;
     transition: .2s ease all;
@@ -120,19 +154,41 @@ header nav .search {
 .botao i {
     margin-right: 8px;
 }
+
 .box-item{
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.primeiro{
-    margin-top: 20px;
+.section{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .secao-carrosel{
-    padding: 0px 0px 10px 10px;
+    padding: 20px 0px 10px 10px;
+    margin-left: 5px;
+    font-size: 1.1em;
+    font-weight: normal;
 }
- .owl-carousel{
-     padding: 0 10px 0 10px;
- }
+
+.owl-carousel{
+    padding: 0 0 0 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.308);
+    color: white;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+footer p{
+    font-weight: bold;
+    font-size: 1.1em;
+}

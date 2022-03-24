@@ -16,14 +16,25 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">NYLFLIX</h1>
             <nav>
-                <a href="#">Filmes</a>
-                <a href="#">Séries</a>
-                <a href="#">Mais recentes</a>
-                <a href="#">Minha lista</a>
-                <input class="search" type="search" placeholder="Buscar" />
+                <h1 class="logo">DIOFLIX</h1>
+                <div class="nav">
+                    <a href="#">Filmes</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Mais recentes</a>
+                    <a href="#">Minha lista</a>
+                </div>
             </nav>
+            <div class="interacao">
+                <form action="search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <i class="fa-solid fa-bell notificacao"></i>
+                <div class="nav-usuario">
+                    <img src="img/img-usuario.png" alt="usuario">
+                </div>
+                <i class="fa-solid fa-caret-down user-arrow-box"></i>
+            </div>
         </div>
     </header>
     <main>
@@ -47,7 +58,7 @@
         </div>
     </main>
     <main>
-        <div class="carousel-populares primeiro">
+        <div class="section carousel-populares">
             <h4 class="secao-carrosel">Populares na Nylflix</h4>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -88,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <div class="carrosel-doramas">
+        <div class="section carrosel-doramas">
             <h4 class="secao-carrosel">Doramas</h4>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -129,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="carrosel-cristaos">
+        <div class="section carrosel-cristaos">
             <h4 class="secao-carrosel">Conteúdo cristão</h4>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -176,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <div class="carrosel-filmes">
+        <div class="section carrosel-filmes">
             <h4 class="secao-carrosel">Filmes</h4>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -251,7 +262,7 @@
                 </div>
             </div>
         </div>
-        <div class="carrosel-series">
+        <div class="section carrosel-series">
             <h4 class="secao-carrosel">Series</h4>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -284,7 +295,7 @@
                 </div>
             </div>
         </div>
-        <div class="carrosel-animes">
+        <div class="section carrosel-animes">
             <h4 class="secao-carrosel">Animes</h4>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -314,6 +325,9 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p>Desenvolvido por: Lívia Almeida</p>
+    </footer>
     <script src="https://kit.fontawesome.com/ecdff62a48.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
